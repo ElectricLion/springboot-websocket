@@ -1,0 +1,3 @@
+WebSocketServe 服务器端向前端推送的消息的类
+/websocket/send/{sid}/{message}是服务器端向前端推送消息的接口
+websocket.html 前端给服务器端发送消息的页面
