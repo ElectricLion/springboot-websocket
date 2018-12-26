@@ -17,7 +17,7 @@ import java.io.IOException;
 @Slf4j
 public class WebsocketController {
 
-    //服务器推送数据接口,请求该接口发送到指定的窗口
+    //作为服务器向前端推送数据的接口,请求该接口,服务器调用sendInfo()方法发送消息到前端页面。
     @RequestMapping("/websocket/send/{cid}/{message}")
     public String pushToWeb(@PathVariable String cid, @PathVariable String message) {
         log.info(message);
