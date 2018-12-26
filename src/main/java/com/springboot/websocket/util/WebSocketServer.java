@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Author:tangh 这是服务器端处理向前端发送消息和接收前端消息的类。同样也是通过WebSocket对象以及该对象下封装的方法。所以前端和后台所用的方法是类似的
  * @since 1.0
  */
-//该注解是基于WS协议的，用来供前端进行访问
+//该注解是基于WS协议的，用来供前端进行访问,下面这个路径就是前端发送消息到服务器的请求路径
 @ServerEndpoint("/websocket/{sid}")
 @Component
 @Slf4j
